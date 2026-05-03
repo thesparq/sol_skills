@@ -1,67 +1,75 @@
-# Sol Documentation Guide
+---
+name: sol_skills
+description: "Setting up and managing any sol.mbt framework frontend or fullstack project using the moonbit program>
+metadata:
+  author: thesparq  
+  version: "1.0.0"
+---
 
-This is the entry point for `docs/`. It establishes a fixed reading order by purpose and clarifies the single source of truth for specifications.
+# Sol Documentation Guide and skills
+
+This is the entry point for `skills/`. It establishes a fixed reading order by purpose and clarifies the single source of truth for specifications.
 
 ## Reading Order
 
 1. Preparing to join development
-   - `docs/onboarding.md`
+   - `skills/onboarding.md`
 2. Getting started (quickest launch)
-   - `docs/quickstart.md`
+   - `skills/quickstart.md`
 3. Deploy operations
-   - `docs/deploy.md`
+   - `skills/deploy.md`
 4. Incident response
-   - `docs/runbook.md`
+   - `skills/runbook.md`
 5. Routing specification
-   - `docs/routing.md`
+   - `skills/routing.md`
 6. Development operations (benchmarking)
-   - `docs/benchmarking.md`
+   - `skills/benchmarking.md`
 7. Troubleshooting
-   - `docs/troubleshooting.md`
+   - `skills/troubleshooting.md`
 8. Development experience (HMR)
-   - `docs/hot-reload.md`
+   - `skills/hot-reload.md`
 9. Migration
-   - `docs/migrate-from-mars.md`
+   - `skills/migrate-from-mars.md`
 10. Advanced design (Wasm entrypoint)
-   - `docs/wasm-entrypoint.md`
+   - `skills/wasm-entrypoint.md`
 
 ## Links by Purpose
 
 - Want to check specifications
-  - `docs/routing.md`
-  - `docs/benchmarking.md`
+  - `skills/routing.md`
+  - `skills/benchmarking.md`
 - Want to get it running first
-  - `docs/onboarding.md`
-  - `docs/quickstart.md`
+  - `skills/onboarding.md`
+  - `skills/quickstart.md`
 - Want to check deployment
-  - `docs/deploy.md`
+  - `skills/deploy.md`
 - Want to check incident response
-  - `docs/runbook.md`
+  - `skills/runbook.md`
 - Want to isolate a problem
-  - `docs/troubleshooting.md`
+  - `skills/troubleshooting.md`
 - Want to migrate incrementally from `mars`
-  - `docs/migrate-from-mars.md`
+  - `skills/migrate-from-mars.md`
 - Want to check the HMR contract
-  - `docs/hot-reload.md`
+  - `skills/hot-reload.md`
 - Want to check the future design of `.mbtx` / WASI / WAGI
-  - `docs/wasm-entrypoint.md`
+  - `skills/wasm-entrypoint.md`
 
 ## Document Map
 
 | Path | Role | Notes |
 |---|---|---|
-| `docs/onboarding.md` | Guide | First-day steps for joining development and `just verify` |
-| `docs/quickstart.md` | Guide | Shortest steps for `dev -> build -> serve` |
-| `docs/deploy.md` | Guide | Preview / production deployment steps for docs |
-| `docs/runbook.md` | Operations | Incident response and rollback steps for docs |
-| `docs/routing.md` | Specification (single source) | API selection, Layout semantics, `source_path` convention |
-| `docs/benchmarking.md` | Specification (single source) | k6 steps, `SOL_BENCH_MODE`, isolating variance under high load |
-| `docs/troubleshooting.md` | Operations | Isolating 404/HMR/benchmark variance issues |
-| `docs/hot-reload.md` | Design | HMR contract shared between `sol`/`mars` |
-| `docs/migrate-from-mars.md` | Guide | Incremental migration from existing `mars` code |
-| `docs/wasm-entrypoint.md` | Design draft | Wasm entrypoint direction based on `.mbtx` |
+| `skills/onboarding.md` | Guide | First-day steps for joining development and `just verify` |
+| `skills/quickstart.md` | Guide | Shortest steps for `dev -> build -> serve` |
+| `skills/deploy.md` | Guide | Preview / production deployment steps for docs |
+| `skills/runbook.md` | Operations | Incident response and rollback steps for docs |
+| `skills/routing.md` | Specification (single source) | API selection, Layout semantics, `source_path` convention |
+| `skills/benchmarking.md` | Specification (single source) | k6 steps, `SOL_BENCH_MODE`, isolating variance under high load |
+| `skills/troubleshooting.md` | Operations | Isolating 404/HMR/benchmark variance issues |
+| `skills/hot-reload.md` | Design | HMR contract shared between `sol`/`mars` |
+| `skills/migrate-from-mars.md` | Guide | Incremental migration from existing `mars` code |
+| `skills/wasm-entrypoint.md` | Design draft | Wasm entrypoint direction based on `.mbtx` |
 
 ## Update Rules
 
-- For specification changes, update the single source (`docs/routing.md` / `docs/benchmarking.md`) first
+- For specification changes, update the single source (`skills/routing.md` / `skills/benchmarking.md`) first
 - README and supplementary documents should link to the single source and not duplicate the same content
