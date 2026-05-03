@@ -1,6 +1,6 @@
 ---
 name: sol_skills
-description: "Setting up and managing any sol.mbt framework frontend or fullstack project using the moonbit program>
+description: "Setting up and managing any sol.mbt framework frontend or fullstack project using the Moonbit programming language, Use when scaffolding or creating a new sol.mbt project, refactoring a sol.mbt project, generating code for a sol.mbt project, reviewing a sol.mbt project, or building and running a sol.mbt project."
 metadata:
   author: thesparq  
   version: "1.0.0"
